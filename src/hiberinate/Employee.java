@@ -3,6 +3,7 @@ package hiberinate;
 import java.io.BufferedInputStream;
 import java.io.Serializable;
 import java.util.HashSet;
+import java.util.Set;
 
 import org.omg.CORBA.PRIVATE_MEMBER;
 import org.omg.CORBA.PUBLIC_MEMBER;
@@ -11,7 +12,7 @@ import com.sun.jndi.ldap.ManageReferralControl;
 
 import jdk.internal.dynalink.beans.StaticClass;
 
-public class Employee {
+public class Employee 
 
 	
      implements Serializable{
@@ -20,23 +21,21 @@ public class Employee {
     private Integer id;
     private String  name;
     private String  pass;
-    
     private double salary;
-    
     private Manager manager;
-    private set<Attend>attends=new HashSet<Attend>();
-    private set<Payment>payments=new HashSet<Payments>();
+    private Set<Attend>attends=new HashSet<Attend>();
+    private Set<Payment>payments=new HashSet<Payments>();
     public Employee() {
     	
     	
     	
     }   
     
+}
     
     
-    
-     }
-	}
+     
+	
 
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
