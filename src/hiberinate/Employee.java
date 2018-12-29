@@ -1,0 +1,71 @@
+package hiberinate;
+
+import java.io.BufferedInputStream;
+import java.io.Serializable;
+import java.util.HashSet;
+
+import org.omg.CORBA.PRIVATE_MEMBER;
+import org.omg.CORBA.PUBLIC_MEMBER;
+
+import com.sun.jndi.ldap.ManageReferralControl;
+
+import jdk.internal.dynalink.beans.StaticClass;
+
+public class Employee {
+
+	
+     implements Serializable{
+    	 
+    	 private static final long serialVersionUID=48L;
+    private Integer id;
+    private String  name;
+    private String  pass;
+    
+    private double salary;
+    
+    private Manager manager;
+    private set<Attend>attends=new HashSet<Attend>();
+    private set<Payment>payments=new HashSet<Payments>();
+    public Employee() {
+    	
+    	
+    	
+    }   
+    
+    
+    
+    
+     }
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
+	}
+
+	@Override
+	public boolean equals(Object arg0) {
+		// TODO Auto-generated method stub
+		return super.equals(arg0);
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+		// TODO Auto-generated method stub
+		super.finalize();
+	}
+
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+
+}
